@@ -9,5 +9,11 @@ pipeline {
                 sh 'java -jar target/*.jar'
             }
         }
+
+        stage('Hello') {
+            steps {
+                echo 'Hello Stage'
+            }
+        }
     }
 }
